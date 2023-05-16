@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Candal&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+    --color-pink: #fc8a9bff;
+    --color-dark: #213e4f;
+}
 
 * {
     margin: 0;
@@ -7,9 +12,18 @@
 }
 
 .navbar{
+    background-color: #fff;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin: 30px;
+}
+.navbar .logo{
+    display: flex;
+    justify-content: center;
+}
+.navbar .logo img{
+    width: 80px;    
 }
 .navbar .link-page{
     display: flex;
@@ -18,13 +32,67 @@
     align-items: center;
     text-decoration: none;
     list-style: none;
+    color: var(--color-dark);
+}
+.navbar .link-page:hover{
+    
 }
 .navbar a span{
-    color: #fc8a9bff;
+    color: var(--color-pink);
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
 }
 .navbar a p {
-    color: black;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Candal', sans-serif;
     font-weight: bold;
-    letter-spacing: 1px;
+    font-size: 12px;
+}
+.img-header{
+    background-image: url(/img/background.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Candal', sans-serif;
+    color: #fff;
+    padding: 10% 8%;
+    text-align: center;
+}
+.img-header h1{
+    margin: 20px;
+    font-size: 2em;
+}
+.img-header p{
+    margin: 20px;
+    line-height: 2em;
+    
+}
+.search{
+    background-color: var(--color-pink);
+    padding: 10px 60px;
+}
+.search input{
+    width: 100%;
+    background-color: var(--color-pink);
+    border: none;
+}
+.search input::placeholder{
+    color: #ffffff5d;
+
+}
+
+
+@media (max-width: 960px){
+    .navbar{
+        flex-direction: column;
+    }
+    .navbar .logo{
+        margin: 40px 0;
+        margin-top: 0;
+    }
+    .navbar a span{
+        font-size: 22px;
+    }
 }
