@@ -55,6 +55,7 @@
 .navbar a span:hover + p{
     color: var(--color-pink);
 }
+
 .img-header{
     background-image: url(/img/background.jpg);
     background-position: bottom;
@@ -114,14 +115,18 @@
 
 
 
-/* Debut content Home */
-main .home-content{
+/* Debut home-content */
+/* Debut contact-content */
+main .home-content,
+main .contact-content{
     display: flex;
     flex-direction: column;
     margin: 40px 60px;
 }
 main .home-content .top,
-main .home-content .bot{
+main .contact-content .top,
+main .home-content .bot,
+main .contact-content .bot{
     display: flex;
     flex-direction: column;
 }
