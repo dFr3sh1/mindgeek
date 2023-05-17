@@ -208,6 +208,136 @@ main .home-content .small-block{
         margin-top: 40px;
     }
 }
+/* ----------Debut block serveur mutualise--------- */
+/* ----------Debut block serveur dédié--------- */
+/* ----------Debut block cloud--------- */
+main .serveur-mutualise-content,
+main .serveur-dedie-content,
+main .cloud-content{
+    display: flex;
+    flex-direction: column;
+    margin: 40px 60px;
+}
+main .serveur-mutualise-content .title h2,
+main .serveur-dedie-content .title h2,
+main .cloud-content .title h2{
+    text-align: center;
+    padding: 20px 0;
+    color: var(--color-dark);
+    font-family: 'Candal', sans-serif;
+    font-size: 1.8em;
+    border: 1px dashed var(--color-dark);
+    border-bottom: none;
+    margin-bottom: 40px;
+}
+main .serveur-mutualise-content .title p,
+main .serveur-dedie-content .title p,
+main .cloud-content .title p{
+    text-align: center;
+    padding: 0 20px;
+    color: var(--color-gray);
+}
+
+.home-content .block-info,
+main .serveur-dedie-content .block-info,
+main .cloud-content #packDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3% 3%;
+}
+main .serveur-mutualise-content .block-info .small-block{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 30px 5px 10px;
+    border: 1px dashed #c2c2c2;
+}
+main .serveur-mutualise-content .banner {
+    background-color: var(--color-dark);
+    text-align: center;
+}
+main .serveur-mutualise-content .banner p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: var(--color-backgroundMain);
+    padding: 15px 0;
+    letter-spacing: 0.7px;
+}
+main .serveur-mutualise-content p.description-offre{
+    font-family: 'Open Sans', sans-serif;
+    color: var(--color-gray);
+    letter-spacing: -1px;
+    padding: 10px 0;
+    letter-spacing: 0.7px;
+    padding: 10 20px;
+    text-align: center;
+}
+main .serveur-mutualise-content ul{
+    font-family: 'Open Sans', sans-serif;
+    color: var(--color-gray);
+    padding-left: 40px;
+    letter-spacing: 0.7px;
+    list-style: circle;
+}
+main .serveur-mutualise-content ul li{
+    padding: 5px 0;
+}
+main .serveur-mutualise-content p.price{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: var(--color-dark);
+    padding: 20px 0;
+    letter-spacing: 0.5px;
+}
+main .serveur-mutualise-content a{
+    background-color: var(--color-pink);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: var(--color-backgroundMain);
+    text-decoration: none;
+    text-align: center;
+    padding: 8px 0;
+}
+@media (max-width: 960px) {
+    main .serveur-mutualise-content .title h2{
+        padding: 30px 0;
+    }
+    main .serveur-mutualise-content .title p{
+        text-align: left;
+    }
+    main .serveur-mutualise-content .block-info{
+        flex-direction: column;
+        align-items: center;
+    }
+    main .serveur-mutualise-content .block-info .small-block{
+        width: 100%;
+        margin-top: 40px;
+    }
+    main .serveur-mutualise-content .banner p{
+        padding: 30px 0;
+    }
+    main .serveur-mutualise-content p.description-offre{
+        padding: 20px 0;
+        letter-spacing: -0.5px;
+    }
+    main .serveur-mutualise-content ul{
+        padding-left: 60px;
+        list-style: circle;
+    }
+    main .serveur-mutualise-content ul li{
+        padding: 10px 0;
+    }
+    main .serveur-mutualise-content p.price{
+        padding: 30px 0;
+    }
+    main .serveur-mutualise-content a{
+        text-align: center;
+        padding: 15px 0;
+    }
+}
+
 /* Debut Cloud Packs content */
 
 .home-content p {
@@ -242,6 +372,46 @@ main .home-content .small-block{
 .home-content .packs ul li {
     font-family: 'Open Sans', sans-serif;
     font-size: 2em;
+}
+
+
+
+
+
+main .cloud-content h2 {
+    text-align: center;
+    border: 1px dashed var(--color-gray);
+    border-bottom: none;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#globalPack p {
+    width: 100%;
+    color: var(--color-grey-dot);
+}
+
+#packDiv {
+    display: flex;
+    flex-direction: row;
+    width: ;
+    margin: 5%;
+    gap: 3%;
+}
+
+#packDiv h3 {
+    width: 100%;
+    background-color: var(--color-dark);
+    color: white;
+    padding: 1.25rem;   
+}
+
+.packs {
+    text-align: center;
+    border: dotted 2px;
+    border-color: var(--color-grey-dot);
+    width: 100%;
+    padding: 5%;
 }
 
 
