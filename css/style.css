@@ -3,7 +3,7 @@
 :root {
     --color-pink: #fc8a9bff;
     --color-dark: #213e4f;
-    --color-gray: #c2c2c2;
+    --color-gray: #707070ff;
     --color-backgroundMain : #ffff;
 }
 
@@ -21,15 +21,13 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 30px;
+    margin: 40px;
 }
 .navbar .logo{
     display: flex;
     justify-content: center;
 }
-.navbar .logo img{
-    width: 80px;    
-}
+
 .navbar .link-page{
     display: flex;
     flex-direction: column;
@@ -37,21 +35,25 @@
     align-items: center;
     text-decoration: none;
     list-style: none;
-    color: var(--color-dark);
 }
-.navbar a span{
+.navbar a span{ /* Logo */
     color: var(--color-pink);
-    font-size: 18px;
+    font-size: 2em;
     font-weight: bold;
     padding: 5px;
+    transition: all 0.3s;
 }
-.navbar a span:hover{
+.navbar a p { /* Text du logo */
     color: var(--color-dark);
-}
-.navbar a p {
     font-family: 'Candal', sans-serif;
     font-weight: bold;
-    font-size: 12px;
+    transition: all 0.3s;
+}
+.navbar a span:hover {
+    color: var(--color-dark);
+}
+.navbar a span:hover + p{
+    color: var(--color-pink);
 }
 .img-header{
     background-image: url(/img/background.jpg);
@@ -68,12 +70,12 @@
 }
 .img-header h1{
     margin: 20px;
-    font-size: 1.5em;
+    font-size: 3em;
 }
 .img-header p{
     margin: 10px;
     line-height: 2em;
-    font-size: 1em;
+    font-size: 2em;
 }
 .search{
     background-color: var(--color-pink);
@@ -101,13 +103,11 @@
         margin-top: 0;
     }
     .navbar a span{
-        font-size: 26px;
     }
     .navbar .link-page{
         margin-top: 30px;
     }
     .navbar .link-page p{
-        font-size: 1em;
     }
 }
 /* Fin Header */
@@ -128,6 +128,7 @@ main .home-content .bot{
 main .home-content .title{
     text-align: center;
     padding: 20px 0;
+    font-size: 1.8em;
     color: var(--color-dark);
     font-family: 'Candal', sans-serif;
     border-top: 1px dashed #c2c2c2;
@@ -151,23 +152,20 @@ main .home-content span{
     color: var(--color-pink);
 }
 main .home-content .logo .icon-block{
-    font-size: 3em;
+    font-size: 1.2em;
 }
 main .home-content span p{
     color: var(--color-pink);
     font-family: 'Open Sans', sans-serif;
-    font-size: 0.7rem;
     margin: 20px;
 }
 main .home-content p.price{
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
-    font-size: 1.2rem;
     margin: 20px;
 }
 main .home-content .small-block{
     font-family: 'Open Sans', sans-serif;
-    font-size: 0.6rem;
     color: var(--color-gray);
     width: 30%;
 }
@@ -179,12 +177,131 @@ main .home-content .small-block{
         align-items: center;
     }
     main .home-content .title{
-        font-size: 1.4em;
     }
     main .home-content .small-block{
-        font-size: 0.8rem;
         width: 100%;
         margin-top: 40px;
+    }
+}
+
+
+/* ----------Debut block serveur mutualise--------- */
+main .serveur-mutualise-content{
+    display: flex;
+    flex-direction: column;
+    margin: 40px 60px;
+}
+main .serveur-mutualise-content .title h2{
+    text-align: center;
+    padding: 20px 0;
+    color: var(--color-dark);
+    font-family: 'Candal', sans-serif;
+    border: 1px dashed var(--color-dark);
+    border-bottom: none;
+    margin-bottom: 40px;
+}
+main .serveur-mutualise-content .title p{
+    text-align: center;
+    padding: 0 20px;
+    color: var(--color-gray);
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 40px;
+}
+main .serveur-mutualise-content .block-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+main .serveur-mutualise-content .block-info .small-block{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 30px 5px 10px;
+    border: 1px dashed #c2c2c2;
+}
+main .serveur-mutualise-content .banner {
+    background-color: var(--color-dark);
+    text-align: center;
+}
+main .serveur-mutualise-content .banner p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: var(--color-backgroundMain);
+    padding: 15px 0;
+    letter-spacing: 0.7px;
+}
+main .serveur-mutualise-content p.description-offre{
+    font-family: 'Open Sans', sans-serif;
+    color: var(--color-gray);
+    letter-spacing: -1px;
+    padding: 10px 0;
+    letter-spacing: 0.7px;
+    padding: 10 20px;
+    text-align: center;
+}
+main .serveur-mutualise-content ul{
+    font-family: 'Open Sans', sans-serif;
+    color: var(--color-gray);
+    padding-left: 40px;
+    letter-spacing: 0.7px;
+    list-style: circle;
+}
+main .serveur-mutualise-content ul li{
+    padding: 5px 0;
+}
+main .serveur-mutualise-content p.price{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: var(--color-dark);
+    padding: 20px 0;
+    letter-spacing: 0.5px;
+}
+main .serveur-mutualise-content a{
+    background-color: var(--color-pink);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: var(--color-backgroundMain);
+    text-decoration: none;
+    text-align: center;
+    padding: 8px 0;
+}
+@media (max-width: 960px) {
+    main .serveur-mutualise-content .title h2{
+        padding: 30px 0;
+    }
+    main .serveur-mutualise-content .title p{
+        text-align: left;
+    }
+    main .serveur-mutualise-content .block-info{
+        flex-direction: column;
+        align-items: center;
+    }
+    main .serveur-mutualise-content .block-info .small-block{
+        width: 100%;
+        margin-top: 40px;
+    }
+    main .serveur-mutualise-content .banner p{
+        padding: 30px 0;
+    }
+    main .serveur-mutualise-content p.description-offre{
+        padding: 20px 0;
+        letter-spacing: -0.5px;
+    }
+    main .serveur-mutualise-content ul{
+        padding-left: 60px;
+        list-style: circle;
+    }
+    main .serveur-mutualise-content ul li{
+        padding: 10px 0;
+    }
+    main .serveur-mutualise-content p.price{
+        padding: 30px 0;
+    }
+    main .serveur-mutualise-content a{
+        text-align: center;
+        padding: 15px 0;
     }
 }
 
@@ -199,9 +316,7 @@ main .home-content .small-block{
 
 
 
-
-
-#headerPack h2 {
+main .cloud-content h2 {
     text-align: center;
     border: 1px dashed var(--color-gray);
     border-bottom: none;
@@ -272,3 +387,6 @@ footer a{
     }
 
 }
+
+
+
