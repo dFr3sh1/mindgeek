@@ -116,7 +116,7 @@
 main .home-content{
     display: flex;
     flex-direction: column;
-    margin: 40px 60px;
+    margin: 40px 10%;
 }
 main .home-content .top,
 main .home-content .bot{
@@ -190,7 +190,7 @@ main .serveur-dedie-content,
 main .cloud-content{
     display: flex;
     flex-direction: column;
-    margin: 40px 60px;
+    margin: 40px 10%;
 }
 main .serveur-mutualise-content .title h2,
 main .serveur-dedie-content .title h2,
@@ -413,4 +413,42 @@ footer a{
         padding: 20px;
     }
 
+}
+
+
+
+.login-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+}
+.login-content .login{
+    display: flex;
+    flex-direction: column;
+    margin: 5% 2%;
+}
+.login label {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-align: center;
+}
+.login input{
+    width: 200px;
+    height: 40px;
+    padding: 0 10px;
+    margin-top: 10px;
+    border: none;
+    border-bottom: 1px solid var(--color-dark);
+}
+.login input:focus{
+    outline: none;
+}
+.login button{
+    margin: 40px 0;
+    border: none;
+    padding: 20px 0;
+    cursor: pointer;
 }
