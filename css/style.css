@@ -185,53 +185,80 @@ main .home-content .small-block{
 }
 
 
+
+
+
+
+
+
+
+
 /* ----------Debut block serveur mutualise--------- */
-main .serveur-mutualise-content{
+/* ----------Debut block serveur dédié--------- */
+/* ----------Debut block cloud--------- */
+main .serveur-mutualise-content,
+main .serveur-dedie-content,
+main .cloud-content{
     display: flex;
     flex-direction: column;
     margin: 40px 60px;
 }
-main .serveur-mutualise-content .title h2{
+main .serveur-mutualise-content .title h2,
+main .serveur-dedie-content .title h2,
+main .cloud-content .title h2{
     text-align: center;
     padding: 20px 0;
     color: var(--color-dark);
     font-family: 'Candal', sans-serif;
+    font-size: 1.8em;
     border: 1px dashed var(--color-dark);
     border-bottom: none;
     margin-bottom: 40px;
 }
-main .serveur-mutualise-content .title p{
+main .serveur-mutualise-content .title p,
+main .serveur-dedie-content .title p,
+main .cloud-content .title p{
     text-align: center;
     padding: 0 20px;
     color: var(--color-gray);
     font-family: 'Open Sans', sans-serif;
     margin-bottom: 40px;
 }
-main .serveur-mutualise-content .block-info{
+main .serveur-mutualise-content .block-info,
+main .serveur-dedie-content .block-info,
+main .cloud-content .block-info{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     
 }
-main .serveur-mutualise-content .block-info .small-block{
+main .serveur-mutualise-content .block-info .small-block,
+main .serveur-dedie-content .block-info .small-block,
+main .cloud-content .block-info .small-block{
     display: flex;
     flex-direction: column;
     width: 30%;
     padding: 30px 5px 10px;
     border: 1px dashed #c2c2c2;
 }
-main .serveur-mutualise-content .banner {
+main .serveur-mutualise-content .banner,
+main .serveur-dedie-content .banner,
+main .cloud-content .banner{
     background-color: var(--color-dark);
     text-align: center;
 }
-main .serveur-mutualise-content .banner p{
+main .serveur-mutualise-content .banner p,
+main .serveur-dedie-content .banner p,
+main .cloud-content .banner p{
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     color: var(--color-backgroundMain);
     padding: 15px 0;
     letter-spacing: 0.7px;
 }
-main .serveur-mutualise-content p.description-offre{
+main .serveur-mutualise-content p.description-offre,
+main .serveur-dedie-content p.description-offre,
+main .cloud-content p.description-offre{
     font-family: 'Open Sans', sans-serif;
     color: var(--color-gray);
     letter-spacing: -1px;
@@ -240,17 +267,23 @@ main .serveur-mutualise-content p.description-offre{
     padding: 10 20px;
     text-align: center;
 }
-main .serveur-mutualise-content ul{
+main .serveur-mutualise-content ul,
+main .serveur-dedie-content ul,
+main .cloud-content ul{
     font-family: 'Open Sans', sans-serif;
     color: var(--color-gray);
     padding-left: 40px;
     letter-spacing: 0.7px;
     list-style: circle;
 }
-main .serveur-mutualise-content ul li{
+main .serveur-mutualise-content ul li,
+main .serveur-dedie-content ul li,
+main .cloud-content ul li{
     padding: 5px 0;
 }
-main .serveur-mutualise-content p.price{
+main .serveur-mutualise-content p.price,
+main .serveur-dedie-content p.price,
+main .cloud-content p.price{
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
@@ -258,7 +291,9 @@ main .serveur-mutualise-content p.price{
     padding: 20px 0;
     letter-spacing: 0.5px;
 }
-main .serveur-mutualise-content a{
+main .serveur-mutualise-content a,
+main .serveur-dedie-content a,
+main .cloud-content a{
     background-color: var(--color-pink);
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
@@ -268,38 +303,68 @@ main .serveur-mutualise-content a{
     padding: 8px 0;
 }
 @media (max-width: 960px) {
-    main .serveur-mutualise-content .title h2{
+    main .serveur-mutualise-content .title h2,
+    main .serveur-dedie-content .title h2,
+    main .cloud-content .title h2
+    {
         padding: 30px 0;
     }
-    main .serveur-mutualise-content .title p{
+    main .serveur-mutualise-content .title p,
+    main .serveur-dedie-content .title p,
+    main .cloud-content .title p
+    {
         text-align: left;
     }
-    main .serveur-mutualise-content .block-info{
+    main .serveur-mutualise-content .block-info,
+    main .serveur-dedie-content .block-info,
+    main .cloud-content .block-info
+    {
         flex-direction: column;
         align-items: center;
     }
-    main .serveur-mutualise-content .block-info .small-block{
+    main .serveur-mutualise-content .block-info .small-block,
+    main .serveur-dedie-content .block-info .small-block,
+    main .cloud-content .block-info .small-block
+    {
         width: 100%;
         margin-top: 40px;
     }
-    main .serveur-mutualise-content .banner p{
+    main .serveur-mutualise-content .banner p,
+    main .serveur-dedie-content .banner p,
+    main .cloud-content .banner p
+    {
         padding: 30px 0;
     }
-    main .serveur-mutualise-content p.description-offre{
+    main .serveur-mutualise-content p.description-offre,
+    main .serveur-dedie-content p.description-offre,
+    main .cloud-content p.description-offre
+    {
         padding: 20px 0;
         letter-spacing: -0.5px;
     }
-    main .serveur-mutualise-content ul{
+    main .serveur-mutualise-content ul,
+    main .serveur-dedie-content ul,
+    main .cloud-content ul
+    {
         padding-left: 60px;
         list-style: circle;
     }
-    main .serveur-mutualise-content ul li{
+    main .serveur-mutualise-content ul li,
+    main .serveur-dedie-content ul li,
+    main .cloud-content ul li
+    {
         padding: 10px 0;
     }
-    main .serveur-mutualise-content p.price{
+    main .serveur-mutualise-content p.price,
+    main .serveur-dedie-content p.price,
+    main .cloud-content p.price
+    {
         padding: 30px 0;
     }
-    main .serveur-mutualise-content a{
+    main .serveur-mutualise-content a,
+    main .serveur-dedie-content a,
+    main .cloud-content a
+    {
         text-align: center;
         padding: 15px 0;
     }
@@ -307,6 +372,7 @@ main .serveur-mutualise-content a{
 
 
 
+/*  Serveur Dedié */
 
 
 
@@ -316,7 +382,8 @@ main .serveur-mutualise-content a{
 
 
 
-main .cloud-content h2 {
+
+/* main .cloud-content h2 {
     text-align: center;
     border: 1px dashed var(--color-gray);
     border-bottom: none;
@@ -347,7 +414,7 @@ main .cloud-content h2 {
     border-color: var(--color-grey-dot);
     width: 100%;
     padding: 5%;
-}
+} */
 
 
 
