@@ -122,6 +122,7 @@ main .home-content .top,
 main .home-content .bot{
     display: flex;
     flex-direction: column;
+    padding: 3%;
 }
 main .home-content .title{
     text-align: center;
@@ -129,30 +130,39 @@ main .home-content .title{
     font-size: 1.8em;
     color: var(--color-dark);
     font-family: 'Candal', sans-serif;
-    border-top: 1px dashed #c2c2c2;
-    border-left: 1px dashed #c2c2c2;
-    border-right: 1px dashed #c2c2c2;
+    border: 1px dashed #707070ff;
+    border-bottom: none;
+
 }
 main .home-content .top .block-info,
 main .home-content .bot .block-info{
     display: flex;
     flex-direction: row;
-    padding: 20px 0;
+    padding: 3% 2%;
     justify-content: space-between;
+}
+main .home-content .top  {
+    padding: 3%;
+    color: #707070ff;
 }
 main .home-content .top .block-info{
     margin-bottom: 40px;
 }
-main .home-content span{
+main .home-content span {
     display: flex;
     flex-direction: column;
     text-align: center;
     color: var(--color-pink);
 }
+
+main .home-content span p {
+    color: var(--color-pink);
+}
+
 main .home-content .logo .icon-block{
     font-size: 1.2em;
 }
-main .home-content span p{
+main .home-content span.icon-block p{
     color: var(--color-pink);
     font-family: 'Open Sans', sans-serif;
     margin: 20px;
@@ -174,8 +184,7 @@ main .home-content .small-block{
         flex-direction: column;
         align-items: center;
     }
-    main .home-content .title{
-    }
+
     main .home-content .small-block{
         width: 100%;
         margin-top: 40px;
@@ -192,18 +201,20 @@ main .cloud-content{
     flex-direction: column;
     margin: 40px 60px;
 }
+
 main .serveur-mutualise-content .title h2,
 main .serveur-dedie-content .title h2,
 main .cloud-content .title h2{
-    text-align: center;
+    /*text-align: center;*/
     padding: 20px 0;
-    color: var(--color-dark);
+    /*color: var(--color-dark);
     font-family: 'Candal', sans-serif;
     font-size: 1.8em;
-    border: 1px dashed var(--color-dark);
-    border-bottom: none;
+    /*border: 1px dashed var(--color-dark);*/
+    /*border-bottom: none;*/
     margin-bottom: 40px;
 }
+
 main .serveur-mutualise-content .title p,
 main .serveur-dedie-content .title p,
 main .cloud-content .title p{
@@ -219,8 +230,8 @@ main .cloud-content .block-info{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
 }
+
 main .serveur-mutualise-content .block-info .small-block,
 main .serveur-dedie-content .block-info .small-block,
 main .cloud-content .block-info .small-block{
