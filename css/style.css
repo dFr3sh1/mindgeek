@@ -3,7 +3,7 @@
 :root {
     --color-pink: #fc8a9bff;
     --color-dark: #213e4f;
-    --color-gray: #c2c2c2;
+    --color-gray: #7e7e7e;
 }
 
 * {
@@ -12,6 +12,31 @@
     box-sizing: border-box;
 }
 
+header h1 {
+    font-family: 'Candal', sans-serif;
+    font-size: 3em;
+}
+
+header p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+}
+
+main h2 {
+    font-family: 'Candal', sans-serif;
+    font-size: 1.8em;
+    color: var(--color-dark);
+
+}
+
+main h3 {
+    font-family: 'Candal', sans-serif;
+    font-size: 1.2em;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
 
 /* -Début de header- */
 .navbar{
@@ -66,12 +91,12 @@
 }
 .img-header h1{
     margin: 20px;
-    font-size: 1.5em;
+    font-size: 3em;
 }
 .img-header p{
     margin: 10px;
     line-height: 2em;
-    font-size: 1em;
+    font-size: 2em;
 }
 .search{
     background-color: var(--color-pink);
@@ -184,4 +209,62 @@ main .home-content .small-block{
         width: 100%;
         margin-top: 40px;
     }
+}
+
+/* Debut Cloud Packs content */
+
+.home-content p {
+    padding: 3%;
+    color: var(--color-gray);
+}
+
+.home-content #packDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3% 3%;
+}
+
+.home-content .packs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    border: dotted 2px;
+    border-color: var(--color-gray);
+    width: 31%;
+    padding: 0.3125rem;
+}
+
+#packDiv h3 {
+    width: 100%;
+    background-color: var(--color-dark);
+    color: white;
+    padding: 1.25rem;   
+}
+.home-content .packs ul li {
+    ont-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+}
+
+
+
+/* End Cloud Paks content */
+
+
+/* Start footer */
+footer {
+    width: 100%;
+    height: 19.625rem;
+    background-color: var(--color-dark);
+    display: flex;
+    flex-direction: row;
+    color: var(--color-backgroundMain);
+    max-width: 80%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-left: 10%;
+    padding-top: -10% ;
+    padding-right: 10%;
+    font-family: 'Open Sans', sans-serif;
 }

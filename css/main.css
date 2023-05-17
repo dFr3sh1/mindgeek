@@ -25,10 +25,9 @@ p {
 }
 
 * {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -66,14 +65,6 @@ main {
 #globalPack p {
     width: 100%;
     color: var(--color-grey-dot);
-}
-
-#packDiv {
-    display: flex;
-    flex-direction: row;
-    width: ;
-    margin: 5%;
-    gap: 3%;
 }
 
 #packDiv h3 {
