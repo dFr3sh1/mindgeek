@@ -117,16 +117,13 @@
 
 /* Debut home-content */
 /* Debut contact-content */
-main .home-content,
-main .contact-content{
+main .home-content{
     display: flex;
     flex-direction: column;
     margin: 40px 60px;
 }
 main .home-content .top,
-main .contact-content .top,
-main .home-content .bot,
-main .contact-content .bot{
+main .home-content .bot{
     display: flex;
     flex-direction: column;
 }
@@ -376,52 +373,23 @@ main .cloud-content a{
 }
 
 
-
-/*  Serveur Dedié */
-
-
-
-
-
-
-
-
-
-
-/* main .cloud-content h2 {
-    text-align: center;
-    border: 1px dashed var(--color-gray);
-    border-bottom: none;
+main .contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .contact-content .top{
+    display: flex;
+    flex-direction: column;
+}
+main .contact-content .top .title{
     text-align: center;
     padding: 20px 0;
 }
-
-#globalPack p {
-    width: 100%;
-    color: var(--color-grey-dot);
+main .contact-content iframe{
+    width: 100vw;
+    height: 80vh;
 }
-
-#packDiv {
-    display: flex;
-    flex-direction: row;
-    width: ;
-    margin: 5%;
-    gap: 3%;
-}
-
-#packDiv h3 {
-    width: 100%;
-}
-
-.packs {
-    text-align: center;
-    border: dotted 2px;
-    border-color: var(--color-grey-dot);
-    width: 100%;
-    padding: 5%;
-} */
-
-
 
 
 
