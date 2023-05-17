@@ -3,13 +3,15 @@
 :root {
     --color-pink: #fc8a9bff;
     --color-dark: #213e4f;
-    --color-gray: #7e7e7e;
+    --color-gray: #707070ff;
+    --color-backgroundMain : #ffff;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 header h1 {
@@ -44,15 +46,13 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 30px;
+    margin: 40px;
 }
 .navbar .logo{
     display: flex;
     justify-content: center;
 }
-.navbar .logo img{
-    width: 80px;    
-}
+
 .navbar .link-page{
     display: flex;
     flex-direction: column;
@@ -60,21 +60,25 @@ p {
     align-items: center;
     text-decoration: none;
     list-style: none;
-    color: var(--color-dark);
 }
-.navbar a span{
+.navbar a span{ /* Logo */
     color: var(--color-pink);
-    font-size: 18px;
+    font-size: 2em;
     font-weight: bold;
     padding: 5px;
+    transition: all 0.3s;
 }
-.navbar a span:hover{
+.navbar a p { /* Text du logo */
     color: var(--color-dark);
-}
-.navbar a p {
     font-family: 'Candal', sans-serif;
     font-weight: bold;
-    font-size: 12px;
+    transition: all 0.3s;
+}
+.navbar a span:hover {
+    color: var(--color-dark);
+}
+.navbar a span:hover + p{
+    color: var(--color-pink);
 }
 .img-header{
     background-image: url(/img/background.jpg);
@@ -124,13 +128,11 @@ p {
         margin-top: 0;
     }
     .navbar a span{
-        font-size: 26px;
     }
     .navbar .link-page{
         margin-top: 30px;
     }
     .navbar .link-page p{
-        font-size: 1em;
     }
 }
 /* Fin Header */
@@ -151,6 +153,7 @@ main .home-content .bot{
 main .home-content .title{
     text-align: center;
     padding: 20px 0;
+    font-size: 1.8em;
     color: var(--color-dark);
     font-family: 'Candal', sans-serif;
     border-top: 1px dashed #c2c2c2;
@@ -174,23 +177,20 @@ main .home-content span{
     color: var(--color-pink);
 }
 main .home-content .logo .icon-block{
-    font-size: 3em;
+    font-size: 1.2em;
 }
 main .home-content span p{
     color: var(--color-pink);
     font-family: 'Open Sans', sans-serif;
-    font-size: 0.7rem;
     margin: 20px;
 }
 main .home-content p.price{
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
-    font-size: 1.2rem;
     margin: 20px;
 }
 main .home-content .small-block{
     font-family: 'Open Sans', sans-serif;
-    font-size: 0.6rem;
     color: var(--color-gray);
     width: 30%;
 }
@@ -202,15 +202,12 @@ main .home-content .small-block{
         align-items: center;
     }
     main .home-content .title{
-        font-size: 1.4em;
     }
     main .home-content .small-block{
-        font-size: 0.8rem;
         width: 100%;
         margin-top: 40px;
     }
 }
-
 /* Debut Cloud Packs content */
 
 .home-content p {
@@ -243,7 +240,7 @@ main .home-content .small-block{
     padding: 1.25rem;   
 }
 .home-content .packs ul li {
-    ont-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 2em;
 }
 
