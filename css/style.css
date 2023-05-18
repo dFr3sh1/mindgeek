@@ -398,18 +398,24 @@ main .contact-content #map-contact iframe{
     height: 100%;
 }
 
-.home-content .block-info .small-block .logo-contact .info-contact {
+.home-content .block-info .info-contact {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-end;
-    padding-top: 6%;
+}
+
+.home-content .block-info .info-contact span {
+    color: pink; padding-top: 10px
 }
 
 .block-info .small-block .logo-contact {   
     border-bottom: 1px dotted pink;
+    padding-bottom: 5%;
 }
+
+
 
 
 
