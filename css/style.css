@@ -116,7 +116,7 @@
 main .home-content{
     display: flex;
     flex-direction: column;
-    margin: 40px 60px;
+    margin: 40px 10%;
 }
 main .home-content .top,
 main .home-content .bot{
@@ -162,7 +162,7 @@ main .home-content span p {
 main .home-content .logo .icon-block{
     font-size: 1.2em;
 }
-main .home-content span.icon-block p{
+main .home-content span h3{
     color: var(--color-pink);
     font-family: 'Open Sans', sans-serif;
     margin: 20px;
@@ -199,7 +199,7 @@ main .serveur-dedie-content,
 main .cloud-content{
     display: flex;
     flex-direction: column;
-    margin: 40px 60px;
+    margin: 40px 10%;
 }
 
 main .serveur-mutualise-content .title h2,
@@ -247,9 +247,9 @@ main .cloud-content .banner{
     background-color: var(--color-dark);
     text-align: center;
 }
-main .serveur-mutualise-content .banner p,
-main .serveur-dedie-content .banner p,
-main .cloud-content .banner p{
+main .serveur-mutualise-content .banner h3,
+main .serveur-dedie-content .banner h3,
+main .cloud-content .banner h3{
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     color: var(--color-backgroundMain);
@@ -395,7 +395,7 @@ main .contact-content iframe{
 
 
 
-footer {
+footer nav {
     list-style: none;
     background-color: var(--color-dark);
     display: flex;
@@ -405,7 +405,7 @@ footer {
     font-weight: bold;
     padding-bottom: 40px;
 }
-footer a{
+footer nav a{
     list-style: none;
     color: var(--color-backgroundMain);
     text-decoration: none;
@@ -413,15 +413,53 @@ footer a{
 }
 
 @media (max-width: 960px){
-    footer {
+    footer nav {
         flex-direction: column;
         justify-content: center;
         text-align: center;
         padding-bottom: 200px;
         padding-top: 50px;
     }
-    footer a{
+    footer nav a{
         padding: 20px;
     }
 
+}
+
+
+
+.login-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+}
+.login-content .login{
+    display: flex;
+    flex-direction: column;
+    margin: 5% 2%;
+}
+.login label {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-align: center;
+}
+.login input{
+    width: 200px;
+    height: 40px;
+    padding: 0 10px;
+    margin-top: 10px;
+    border: none;
+    border-bottom: 1px solid var(--color-dark);
+}
+.login input:focus{
+    outline: none;
+}
+.login button{
+    margin: 40px 0;
+    border: none;
+    padding: 20px 0;
+    cursor: pointer;
 }
