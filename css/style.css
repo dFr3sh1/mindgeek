@@ -178,6 +178,10 @@ main .home-content .small-block{
     width: 30%;
 }
 
+#map-contact {
+    height: 22.8125rem;
+}
+
 @media (max-width: 960px) {
     main .home-content .top .block-info,
     main .home-content .bot .block-info{
@@ -371,7 +375,7 @@ main .cloud-content a{
 }
 
 
-main .contact-content {
+/*main .contact-content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -384,12 +388,28 @@ main .contact-content .top .title{
     text-align: center;
     padding: 20px 0;
 }
-main .contact-content iframe{
+main .contact-content #map-contact iframe{
     width: 100vw;
     height: 80vh;
+}*/
+
+#map-contact iframe {
+    width: 100%;
+    height: 100%;
 }
 
+.home-content .block-info .small-block .logo-contact .info-contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    padding-top: 6%;
+}
 
+.block-info .small-block .logo-contact {   
+    border-bottom: 1px dotted pink;
+}
 
 
 
