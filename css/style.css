@@ -129,9 +129,8 @@ main .home-content .title{
     font-size: 1.8em;
     color: var(--color-dark);
     font-family: 'Candal', sans-serif;
-    border-top: 1px dashed #c2c2c2;
-    border-left: 1px dashed #c2c2c2;
-    border-right: 1px dashed #c2c2c2;
+    border: 1px dashed var(--color-dark);
+    border-bottom: none;
 }
 main .home-content .top .block-info,
 main .home-content .bot .block-info{
@@ -228,7 +227,7 @@ main .cloud-content .block-info .small-block{
     flex-direction: column;
     width: 30%;
     padding: 30px 5px 10px;
-    border: 1px dashed #c2c2c2;
+    border: 1px dashed var(--color-dark);
 }
 main .serveur-mutualise-content .banner,
 main .serveur-dedie-content .banner,
