@@ -157,11 +157,7 @@ main .home-content .top  {
 main .home-content .top .block-info{
     margin-bottom: 40px;
 }
-<<<<<<< HEAD
-main .home-content span {
-=======
 main .home-content .logo .icon-block {
->>>>>>> a3f1b124b209c8559d1380acaefdf8df8c352e8c
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -175,11 +171,7 @@ main .home-content p {
 main .home-content .logo .icon-block{
     font-size: 1.2em;
 }
-<<<<<<< HEAD
-main .home-content span h3{
-=======
 main .home-content .logo .icon-block h3{
->>>>>>> a3f1b124b209c8559d1380acaefdf8df8c352e8c
     color: var(--color-pink);
     font-family: 'Open Sans', sans-serif;
     margin: 20px;
@@ -482,6 +474,7 @@ footer nav a{
 .login-content .login{
     display: flex;
     flex-direction: column;
+    align-items: center@;
     margin: 5% 2%;
 }
 .login label {
@@ -497,6 +490,7 @@ footer nav a{
     margin-top: 10px;
     border: none;
     border-bottom: 1px solid var(--color-dark);
+    text-align: center;
 }
 .login input:focus{
     outline: none;
