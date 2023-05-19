@@ -404,10 +404,24 @@ main .contact-content #map-contact iframe{
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-end;
+    padding-top: 0.9375rem;
+}
+
+.home-content .block-info #contact-addresse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.home-content .block-info .info-contact p {
+    text-align: center;
+    line-height: 1.5625rem;
 }
 
 .home-content .block-info .info-contact span {
-    color: pink; padding-top: 10px
+    color: pink; 
+    padding-top: 0.0625rem;
 }
 
 .block-info .small-block .logo-contact {   
