@@ -33,7 +33,7 @@
     text-decoration: none;
     list-style: none;
 }
-.navbar a span{ /* Logo */
+.navbar a div { /* Logo */
     color: var(--color-pink);
     font-size: 2em;
     font-weight: bold;
@@ -46,12 +46,21 @@
     font-weight: bold;
     transition: all 0.3s;
 }
-.navbar a span:hover {
+.navbar a div:hover {
     color: var(--color-dark);
 }
-.navbar a span:hover + p{
+.navbar a div:hover + p{
     color: var(--color-pink);
 }
+
+.navbar-hover:hover div  {
+    color: var(--color-dark);
+}
+
+.navbar-hover:hover p {
+    color: var(--color-pink);
+}
+
 
 .img-header{
     background-image: url(/img/background.jpg);
