@@ -25,6 +25,7 @@
     justify-content: center;
 }
 
+
 .navbar .link-page{
     display: flex;
     flex-direction: column;
@@ -156,7 +157,7 @@ main .home-content .top  {
 main .home-content .top .block-info{
     margin-bottom: 40px;
 }
-main .home-content div {
+main .home-content .logo .icon-block {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -170,7 +171,7 @@ main .home-content p {
 main .home-content .logo .icon-block{
     font-size: 1.2em;
 }
-main .home-content  span h3{
+main .home-content .logo .icon-block h3{
     color: var(--color-pink);
     font-family: 'Open Sans', sans-serif;
     margin: 20px;
@@ -217,13 +218,13 @@ main .cloud-content{
 main .serveur-mutualise-content .title h2,
 main .serveur-dedie-content .title h2,
 main .cloud-content .title h2{
-    /*text-align: center;*/
     padding: 20px 0;
-    /*color: var(--color-dark);
+    text-align: center;
+    color: var(--color-dark);
     font-family: 'Candal', sans-serif;
     font-size: 1.8em;
-    /*border: 1px dashed var(--color-dark);*/
-    /*border-bottom: none;*/
+    border: 1px dashed var(--color-dark);
+    border-bottom: none;
     margin-bottom: 40px;
 }
 
@@ -251,7 +252,7 @@ main .cloud-content .block-info .small-block{
     flex-direction: column;
     width: 30%;
     padding: 30px 5px 10px;
-    border: 1px dashed #c2c2c2;
+    border: 1px dashed var(--color-dark);
 }
 main .serveur-mutualise-content .banner,
 main .serveur-dedie-content .banner,
@@ -383,23 +384,6 @@ main .cloud-content a{
 }
 
 
-/*main .contact-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-main .contact-content .top{
-    display: flex;
-    flex-direction: column;
-}
-main .contact-content .top .title{
-    text-align: center;
-    padding: 20px 0;
-}
-main .contact-content #map-contact iframe{
-    width: 100vw;
-    height: 80vh;
-}*/
 
 #map-contact iframe {
     width: 100%;
