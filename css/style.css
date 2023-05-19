@@ -34,7 +34,7 @@
     text-decoration: none;
     list-style: none;
 }
-.navbar a span{ /* Logo */
+.navbar a div { /* Logo */
     color: var(--color-pink);
     font-size: 2em;
     font-weight: bold;
@@ -47,12 +47,21 @@
     font-weight: bold;
     transition: all 0.3s;
 }
-.navbar a span:hover {
+.navbar a div:hover {
     color: var(--color-dark);
 }
-.navbar a span:hover + p{
+.navbar a div:hover + p{
     color: var(--color-pink);
 }
+
+.navbar-hover:hover div  {
+    color: var(--color-dark);
+}
+
+.navbar-hover:hover p {
+    color: var(--color-pink);
+}
+
 
 .img-header{
     background-image: url(/img/background.jpg);
@@ -101,8 +110,7 @@
         margin-bottom: 0;
         margin-top: 0;
     }
-    .navbar a span{
-    }
+
     .navbar .link-page{
         margin-top: 30px;
     }
@@ -149,21 +157,21 @@ main .home-content .top  {
 main .home-content .top .block-info{
     margin-bottom: 40px;
 }
-main .home-content .logo .icon-block {
+main .home-content span {
     display: flex;
     flex-direction: column;
     text-align: center;
     color: var(--color-pink);
 }
 
-main .home-content span p {
-    color: var(--color-pink);
+main .home-content p {
+    color: var(--color-gray);
 }
 
 main .home-content .logo .icon-block{
     font-size: 1.2em;
 }
-main .home-content .logo .icon-block h3{
+main .home-content span h3{
     color: var(--color-pink);
     font-family: 'Open Sans', sans-serif;
     margin: 20px;
@@ -405,12 +413,12 @@ main .cloud-content a{
 }
 
 .home-content .block-info .info-contact span {
-    color: pink; 
+    color: var(--color-pink); 
     padding-top: 0.0625rem;
 }
 
 .block-info .small-block .logo-contact {   
-    border-bottom: 1px dotted pink;
+    border-bottom: 1px dotted var(--color-pink);
     padding-bottom: 5%;
 }
 
@@ -487,4 +495,8 @@ footer nav a{
     border: none;
     padding: 20px 0;
     cursor: pointer;
+}
+.login .option-login {
+    display: flex;
+    flex-direction: row;
 }
