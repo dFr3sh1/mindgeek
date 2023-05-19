@@ -122,6 +122,7 @@ main .home-content .top,
 main .home-content .bot{
     display: flex;
     flex-direction: column;
+    padding: 3%;
 }
 main .home-content .title{
     text-align: center;
@@ -129,25 +130,40 @@ main .home-content .title{
     font-size: 1.8em;
     color: var(--color-dark);
     font-family: 'Candal', sans-serif;
+<<<<<<< HEAD
     border: 1px dashed var(--color-dark);
     border-bottom: none;
+=======
+    border: 1px dashed #707070ff;
+    border-bottom: none;
+
+>>>>>>> 986d788a0dc89b008f06e83bddc36708c9703153
 }
 main .home-content .top .block-info,
 main .home-content .bot .block-info{
     display: flex;
     flex-direction: row;
-    padding: 20px 0;
+    padding: 3% 2%;
     justify-content: space-between;
+}
+main .home-content .top  {
+    padding: 3%;
+    color: #707070ff;
 }
 main .home-content .top .block-info{
     margin-bottom: 40px;
 }
-main .home-content span{
+main .home-content span {
     display: flex;
     flex-direction: column;
     text-align: center;
     color: var(--color-pink);
 }
+
+main .home-content span p {
+    color: var(--color-pink);
+}
+
 main .home-content .logo .icon-block{
     font-size: 1.2em;
 }
@@ -167,14 +183,17 @@ main .home-content .small-block{
     width: 30%;
 }
 
+#map-contact {
+    height: 22.8125rem;
+}
+
 @media (max-width: 960px) {
     main .home-content .top .block-info,
     main .home-content .bot .block-info{
         flex-direction: column;
         align-items: center;
     }
-    main .home-content .title{
-    }
+
     main .home-content .small-block{
         width: 100%;
         margin-top: 40px;
@@ -191,18 +210,20 @@ main .cloud-content{
     flex-direction: column;
     margin: 40px 10%;
 }
+
 main .serveur-mutualise-content .title h2,
 main .serveur-dedie-content .title h2,
 main .cloud-content .title h2{
-    text-align: center;
+    /*text-align: center;*/
     padding: 20px 0;
-    color: var(--color-dark);
+    /*color: var(--color-dark);
     font-family: 'Candal', sans-serif;
     font-size: 1.8em;
-    border: 1px dashed var(--color-dark);
-    border-bottom: none;
+    /*border: 1px dashed var(--color-dark);*/
+    /*border-bottom: none;*/
     margin-bottom: 40px;
 }
+
 main .serveur-mutualise-content .title p,
 main .serveur-dedie-content .title p,
 main .cloud-content .title p{
@@ -218,8 +239,8 @@ main .cloud-content .block-info{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
 }
+
 main .serveur-mutualise-content .block-info .small-block,
 main .serveur-dedie-content .block-info .small-block,
 main .cloud-content .block-info .small-block{
@@ -359,7 +380,7 @@ main .cloud-content a{
 }
 
 
-main .contact-content {
+/*main .contact-content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -372,9 +393,46 @@ main .contact-content .top .title{
     text-align: center;
     padding: 20px 0;
 }
-main .contact-content iframe{
+main .contact-content #map-contact iframe{
     width: 100vw;
     height: 80vh;
+}*/
+
+#map-contact iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.home-content .block-info .info-contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    padding-top: 0.9375rem;
+}
+
+.home-content .block-info #contact-address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.home-content .block-info .info-contact p {
+    text-align: center;
+    line-height: 1.5625rem;
+}
+
+.home-content .block-info .info-contact span {
+    color: pink; 
+    padding-top: 0.0625rem;
+}
+
+.block-info .small-block .logo-contact {   
+    border-bottom: 1px dotted pink;
+    padding-bottom: 5%;
 }
 
 
