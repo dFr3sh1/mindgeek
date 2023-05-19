@@ -157,7 +157,11 @@ main .home-content .top  {
 main .home-content .top .block-info{
     margin-bottom: 40px;
 }
+<<<<<<< HEAD
 main .home-content span {
+=======
+main .home-content .logo .icon-block {
+>>>>>>> a3f1b124b209c8559d1380acaefdf8df8c352e8c
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -171,7 +175,11 @@ main .home-content p {
 main .home-content .logo .icon-block{
     font-size: 1.2em;
 }
+<<<<<<< HEAD
 main .home-content span h3{
+=======
+main .home-content .logo .icon-block h3{
+>>>>>>> a3f1b124b209c8559d1380acaefdf8df8c352e8c
     color: var(--color-pink);
     font-family: 'Open Sans', sans-serif;
     margin: 20px;
@@ -180,7 +188,9 @@ main .home-content p.price{
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     margin: 20px;
+    color: var(--color-pink);
 }
+
 main .home-content .small-block{
     font-family: 'Open Sans', sans-serif;
     color: var(--color-gray);
@@ -243,6 +253,7 @@ main .cloud-content .block-info{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 0 3%;
 }
 
 main .serveur-mutualise-content .block-info .small-block,
