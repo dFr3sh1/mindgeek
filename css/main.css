@@ -1,12 +1,12 @@
-header h1 {
+/* header h1 {
     font-family: 'Candal', sans-serif;
     font-size: 3em;
-}
-
+} */
+/* 
 header p {
     font-family: 'Open Sans', sans-serif;
     font-size: 2em;
-}
+} */
 
 main h2 {
     font-family: 'Candal', sans-serif;
@@ -25,10 +25,9 @@ p {
 }
 
 * {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -74,14 +73,6 @@ main {
 #globalPack p {
     width: 100%;
     color: var(--color-grey-dot);
-}
-
-#packDiv {
-    display: flex;
-    flex-direction: row;
-    width: ;
-    margin: 5%;
-    gap: 3%;
 }
 
 #packDiv h3 {

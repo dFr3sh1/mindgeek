@@ -5,33 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="myProjects/webProject/icofont/css/icofont.min.css">
     <link rel="stylesheet" href="/css/style.css">
     <title>mindgeek</title>
+    <meta name="description" content="Lorem">
 </head>
 <body>
     <header>
-        <section class="navbar">
-            <div class="logo">
-                <img src="/img/logo.png" alt="logo">
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <img src="/img/logo.png" alt="logomindgeek">
+            </a>
+            <div class="navbar-hover navbar">
+                <a href="mutualise.html" class="link-page serveur-mut">
+                    <div class="logolink fa-solid fa-users"></div>
+                    <p>Serveur Mutualisé</p>
+                </a>
             </div>
-            <a href="#" class="link-page serveur-mut">
-                <span class="logolink fa-solid fa-users"></span>
+            <div class="navbar-hover navbar">
+                <a href="dedie.html" class="link-page serveur-ded">
+                    <div class="logolink fa-solid fa-user"></div>
+                    <p>Serveur Dédié</p>
+                </a>
+            </div>
+            <div class="navbar-hover navbar">
+                <a href="cloud.html" class="link-page solution-cloud">
+                    <div class="logolink fa-solid fa-cloud"></div>
+                    <p>Solution "Cloud"</p>
+                </a>
+            </div>
+            <div class="navbar-hover navbar">
+                <a href="contact.html" class="link-page contact">
+                    <div class="logolink fa-solid fa-envelope"></div>
+                    <p>Contact</p>
+                </a>
+            </div>
+
+            <!--a href="mutualise.html" class="link-page serveur-mut">
+                <div class="logolink fa-solid fa-users"></div>
                 <p>Serveur Mutualisé</p>
             </a>
-            <a href="#" class="link-page serveur-ded">
-                <span class="logolink fa-solid fa-user"></span>
+            <a href="dedie.html" class="link-page serveur-ded">
+                <div class="logolink fa-solid fa-user"></div>
                 <p>Serveur Dédié</p>
             </a>
-            <a href="#" class="link-page solution-cloud">
-                <span class="logolink fa-solid fa-cloud"></span>
+            <a href="dedie.html" class="link-page serveur-ded">
+                <div class="logolink fa-solid fa-user"></div>
+                <p>Serveur Dédié</p>
+            </a>
+            <a href="cloud.html" class="link-page solution-cloud">
+                <div class="logolink fa-solid fa-cloud"></div>
                 <p>Solution "Cloud"</p>
             </a>
             <a href="contact.html" class="link-page contact">
-                <span class="logolink fa-solid fa-envelope"></span>
+                <div class="logolink fa-solid fa-envelope"></div>
                 <p>Contact</p>
-            </a>
-        </section>
+            </a-->
+
+        </nav>
         <div class="img-header">
             <h1 class="titre-img-header">L'hébergement à prix libre</h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint amet perspiciatis consectetur nam hic asperiores.</p>
@@ -42,68 +72,81 @@
     </header>
     <main>
         <div class="home-content">
-            <div class="top">
-                <div class="title">Notre solution en 3 points</div>
+            <section class="top">
+                <h2 class="title">Notre solution en 3 points</h2>
                 <div class="block-info">
-                    <div class="small-block">
+                    <article class="small-block">
                         <div class="logo">
-                            <span class="icon-block fa-solid fa-gears">
-                                <p>Configuration</p>
-                            </span>
+                            <div class="icon-block fa-solid fa-gears">
+                                <h3>Configuration</h3>
+                            </div>
+                            <i class="icofont-gears"></i>
                         </div>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem laborum eaque assumenda atque.</p>
-                    </div>
-                    <div class="small-block">
+                    </article>
+                    <article class="small-block">
                         <div class="logo">
-                            <span class="icon-block fa-sharp fa-solid fa-chart-area">
-                                <p>Monitoring</p>
-                            </span>
+                            <div class="icon-block fa-sharp fa-solid fa-chart-area">
+                                <h3>Monitoring</h3>
+                            </div>
                         </div>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id qui porro laboriosam veritatis voluptatem?</p>
-                    </div>
-                    <div class="small-block">
+                    </article>
+                    <article class="small-block">
                         <div class="logo">
-                            <span class="icon-block fa-solid fa-database">
-                                <p>Sauvegarde</p>
-                            </span>
+                            <div class="icon-block fa-solid fa-database">
+                                <h3>Sauvegarde</h3>
+                            </div>
                         </div>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                    </div>
+                    </article>
                 </div>
-            </div>
-            <div class="bot">
-                <div class="title">Choisissez votre style d'hébergement</div>
+            </section>
+            <section class="bot">
+                <h2 class="title">Choisissez votre style d'hébergement</h2>
                 <div class="block-info">
-                    <div class="small-block">
+                    <article class="small-block">
                         <div class="logo">
-                            <span class="icon-block fa-solid fa-users">
-                                <p>Serveur Mutualisé</p>
+                            <div class="icon-block fa-solid fa-users">
+                                <h3>Serveur Mutualisé</h3>
                                 <p class="price">19€ / mois</p>
-                            </span>
+                            </div>
                         </div>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem laborum eaque assumenda atque, ab quae sequi dolor itaque facere provident pariatur non doloremque architecto suscipit iste eum! Sint, quibusdam libero!</p>
-                    </div>
-                    <div class="small-block">
+                    </article>
+                    <article class="small-block">
                         <div class="logo">
-                            <span class="icon-block fa-solid fa-user">
-                                <p>Serveur Dédié</p>
+                            <div class="icon-block fa-solid fa-user">
+                                <h3>Serveur Dédié</h3>
                                 <p class="price">39€ / mois</p>
-                            </span>
+                            </div>
                         </div>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem laborum eaque assumenda atque, ab quae sequi dolor itaque facere provident pariatur non doloremque architecto suscipit iste eum! Sint, quibusdam libero!</p>
-                    </div>
-                    <div class="small-block">
+                    </article>
+                    <article class="small-block">
                         <div class="logo">
-                            <span class="icon-block fa-solid fa-database">
-                                <p>Service Cloud</p>
+                            <div class="icon-block fa-solid fa-database">
+                                <h3>Service Cloud</h3>
                                 <p class="price">49€ / mois</p>
-                            </span>
+                            </div>
                         </div>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem laborum eaque assumenda atque, ab quae sequi dolor itaque facere provident pariatur non doloremque architecto suscipit iste eum! Sint, quibusdam libero!</p>
-                    </div>
+                    </article>
                 </div>
-            </div>
+            </section>
         </div>
     </main>
+    <footer>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="mutualise.html">Serveur Mutualisé</a>
+            <a href="dedie.html">Serveur Dédié</a>
+            <a href="cloud.html">Solution "Cloud"</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Se connecter</a>
+        </nav>
+    </footer>
+    
+    
 </body>
 </html>
