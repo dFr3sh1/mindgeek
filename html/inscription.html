@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="icon" href="/img/logo.png">
     <title>MindGeek - Inscription</title>
-    <script src="/script/app.js" defer></script>
+    <script src="/script/firebase.js"></script>
 
 </head>
 <body>
@@ -25,14 +25,15 @@
             <img src="/img/logo.png" alt="logomindgeek">
         </a>
         <form id="signup" class="signup" action="signup" method="POST">
-            <label for="">Username :</label>
-            <input type="text" placeholder="Enter your username" required>
-            <label for="">Password :</label>
-            <input type="password" placeholder="Enter your password" required>
-            <label for="">Mail :</label>
-            <input type="email" placeholder="Enter your email" required>
+            <!-- <label for="username">Username</label>
+            <input type="text" name="username" id="username" placeholder="Enter your username" autocomplete="off" required> -->
+            <label for="mail">Mail</label>
+            <input type="email" name="mail" id="mail" placeholder="Enter your email" autocomplete="off" required>
+            <label for="mdp">Password</label>
+            <input type="password" name="mdp" id="mdp" placeholder="Enter your password" autocomplete="off" required>
             <input type="submit" name="submit">
         </form>
     </div>
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script> -->
 </body>
 </html>

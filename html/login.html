@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="/css/style.css">
     <link rel="icon" href="/img/logo.png">
     <title>MindGeek - Se connecter</title>
-    ≈
-
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.css" />
+  
+    
 </head>
 <body>
     <header>
@@ -25,10 +27,10 @@
             <img src="/img/logo.png" alt="logomindgeek">
         </a>
         <form id="login" class="login" action="login" method="POST">
-            <label for="">Username :</label>
-            <input type="text" placeholder="Enter your username" required>
-            <label for="">Password :</label>
-            <input type="password" placeholder="Enter your password" required>
+            <label for="username">Username :</label>
+            <input type="text" name="username" id="username" placeholder="Enter your username" required>
+            <label for="mdp">Password :</label>
+            <input type="password" name="mdp" id="mdp" placeholder="Enter your password" required>
             <button>Se Connecter</button>
             <div class="option-login">
                 <a href="inscription.html">Créer un compte</a>
@@ -37,7 +39,8 @@
             </div>
         </form>
     </div>
-    <script src="/script/app.js" defer></script>
+    <!-- <script type="module" src="/script/firebase.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
 
 </body>
 </html>
